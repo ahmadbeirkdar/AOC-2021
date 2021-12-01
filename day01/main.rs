@@ -29,7 +29,9 @@ fn main() {
             }
         }
     }
-    println!("Ans: {}", solve(input));
+    
+    println!("Ans1: {}", solve1(input.clone()));
+    println!("Ans2: {}", solve2(input.clone()));
 }
 fn read_lines<P>(filename: P) -> io::Result<io::Lines<io::BufReader<File>>>
 where P: AsRef<Path>, {
